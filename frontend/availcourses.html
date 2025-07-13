@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Available</title>
+    <script type="text/javascript" src="myscript.js"></script>
+    <style>
+    body{
+        text-align:center;
+    }
+    td{
+        background-color: aliceblue;
+    }
+</style>
+</head>
+<body>
+    <h2>Available Course</h2>
+    <table align="center" border="1">
+        <tr align="center" style="background-color: lightblue">
+            <th width="100">Course_id</th>
+            <th width="150">Course_Name</th>
+            <th width="150">Trainer</th>
+            <th width="100">Duration in weeks</th>
+          </tr>
+
+          <tbody align="center" id="coursetable"></tbody>
+    </table>
+    
+    <script type="text/javascript">
+        window.onload = function(){
+            showCourses();
+        };
+    </script>
+</body>
+</html>

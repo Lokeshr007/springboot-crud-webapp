@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register course</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            background-color: rgb(177, 230, 208);
+            text-align: center;
+        }
+        form{
+            margin:auto;
+             padding: 20px;
+            width: 400px;
+            background-color: #fff; 
+        }
+        input ,select,button{
+            width:90%;
+            padding:10px;
+            margin:10px;
+        }
+        button{
+            background-color: #4caf50;
+            color:white;
+            font-weight: bold;
+            font-size: medium;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #104212;
+        }
+    </style>
+</head>
+<body>
+    <h2>Register Course</h2>    
+    <form action="http://localhost:8080/course/register" method="post">
+        <lable for="name">Enter Your Name</lable>
+        <input type="text" name="name" id="name"><br><br>
+        <lable for="email_id">Enter EmailId</lable>
+        <input type="text" name="emailId" id="email_id"><br><br>
+        <lable for="course_name">Enter Course Name</lable><br> <br>
+        <select id="course_name" name="coursename">
+            <option value="Java Essentials">  Java Essentials</option>
+            <option value="SQL"> SQL</option>
+            <option value="Python for AI">  Python for Artificia Intelligence</option>
+            <option value="Spring Boot">Spring Boot</option>
+        </select>
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

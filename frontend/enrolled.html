@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Enrolled</title>
+    <script type="text/javascript" src="myscript.js"></script>
+    <style>
+    body{
+        text-align:center;
+    }
+    td{
+        background-color: aliceblue;
+    }
+</style>
+</head>
+<body>
+    <h2>Enrolled Course</h2>
+    <table align="center" border="1">
+        <tr align="center" style="background-color: lightblue">
+            <th width="150">Name</th>
+            <th width="150">Email Id</th>
+            <th width="100">Course Name</th>
+          </tr>
+
+          <tbody align="center" id="enrolledtable"></tbody>
+    </table>
+    
+    <script type="text/javascript">
+        window.onload = function(){
+            showEnrolledCourses();
+        };
+    </script>
+</body>
+</html>
